@@ -1,11 +1,11 @@
 <template>
-  <DynamicPage/>
+  <DynamicPageLevel1/>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'Level 1 Dyanamic page'
+  name: 'Level1'
 })
 </script>

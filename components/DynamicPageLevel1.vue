@@ -1,12 +1,20 @@
 <!-- Please remove this file from your project -->
 <template>
-  <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
-    DynamicPage Page Level 1
-  </div>
+  <h1>
+    Dynamic Page With slug - {{ this.slug }}
+  </h1>
 </template>
 
 <script>
 export default {
-  name: 'NuxtTutorial'
+  name: 'Dynmaic1',
+  data(){
+    return {
+      slug: ''
+    }
+  },
+  mounted () {
+    this.slug = this.$route.params.slug;
+  }
 }
 </script>
